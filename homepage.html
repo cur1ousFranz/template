@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .page-wrapper {
+            display: grid;
+            grid-row-gap: 150px;
+            position: relative;
+
+            
+        }
+        #nav-header {
+            position: fixed;
+            top: 0;
+            display: flex;
+            min-height: 75px;
+
+            background-color: #ffff;
+            
+        }
+
+        #img-container {
+            width: 60vw;
+            align-self: center;
+            margin-left: 20px;
+            
+        }
+
+        #img-container img {
+            width: 350px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+           
+        }
+
+        #nav-container ul{
+            list-style: none;
+            display: flex;
+          
+        }
+
+        #nav-container {
+            height: 100%;
+            align-self: center;
+            text-align: right;
+            margin: 0 0 0 auto;
+            margin-right: 20px;
+        }
+
+        #nav-container ul a{
+            margin-left: 4rem;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* email form section */
+
+        #email-form {
+            display: grid;
+            height: 250px;
+            margin-top: 100px;
+            text-align: center;
+            grid-template-rows: 50px 50px 50px;
+
+        }
+
+        #email-form-title {
+            margin-top: 10px;
+        }
+
+        #email-form input{
+            width: 350px;
+            height: 100%;
+            border-radius: 10px;
+
+        }
+
+        #email-form button {
+            background-color: rgb(229, 255, 79);
+            border: white;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        #section-email {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            width: 100%;
+        }
+
+
+        /* -------- pricing section ------------*/
+
+        #pricing {
+            display: flex;
+            padding: 30px;
+        }
+
+        #pricing img {
+            width: 80px;
+            height: 75px;
+        }
+
+        #pricing div {
+            margin-right: 30px;
+            margin-left: 30px;
+            border: 0;
+        }
+        
+        /* ----------- video container -------------*/
+
+       
+        #video-section div{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        /* ------- cardview section -----------*/
+        #cardview-section{
+    
+          margin-top: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .cardview-div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: calc(100% / 3);
+          height: 300px;
+          margin: 20px;
+          border: 1px solid #000;
+          border-radius: 3px;
+        }
+
+        .cardview-div div {
+            margin-top: 10px;
+        }
+
+        .cardview-div button {
+            width: 100%;
+            background-color: yellow;
+            border: white;
+            margin-top: 25px;
+            padding: 15px
+        }
+
+        #cardview-title {
+            width: 100%;
+            padding: 15px;
+            margin: 0%;
+            background-color: rgb(231, 231, 231);
+        }
+
+        /* footer section */
+
+        footer {
+            margin-top: 100px;
+            height: 150px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        footer div {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        footer ul li {
+            margin-left: 50px;
+            
+        }
+           
+        /* -----------------------MEDIA QUERIES ----------------*/
+
+        @media (max-width: 800px){
+            #pricing {
+                flex-direction: column;
+                background-color: gainsboro;
+                box-sizing: border-box;
+            }
+            #pricing p {
+                display: flex;
+            }
+
+            #premium-container {
+                flex-direction: column;
+                align-content: center;
+            }
+
+            #nav-header {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            #nav-container ul{
+                display: list-item;
+                text-align: center;
+                justify-content: center;
+                margin-right: 50px;
+            }
+
+            #nav-container ul li{
+                margin-top: 10px;
+            }
+
+            #nav-container, #img-container {
+                width: 100%;
+                padding: 0;
+            }
+            #img-container img {
+                margin: auto;
+            }
+
+            #shipping-container, 
+            #assurance-container {
+                margin-top: 100px;
+            }
+            
+            #cardview-section{
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cardview-div {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                margin: 20px
+                
+            }
+
+            #section-email {
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width: 570px) {
+
+                #pricing {
+                    text-align: center !important;
+                }
+                
+                #pricing img {
+                   margin: 0;
+               }
+ 
+                #shipping-container, 
+                #assurance-container {
+                    margin-top: 100px;
+               }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="page-wrapper">
+        <div class="navigation">
+            <header id="nav-header">
+                <div id="img-container">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
+                </div>
+                <nav id="nav-container">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="section-email">
+                <form id="email-form">
+                    <div id="email-form-title">
+                        <h2>Handcrafted, home-made masterpieces</h2>
+                    </div>
+                    <div>
+                        <input type="email" name="" id="email" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                        <button type="submit">Get Started</button>
+                    </div>
+                </form>
+            </section>
+            <section id="pricing">
+                <div id="premium-container">
+                    <div id="p1">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3649/3649801.png" alt="">
+                    </div>
+                    <div id="p2">
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shini id="p1"est brass which is sourced locally.
+                          This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+
+                <div id="shipping-container">
+                    <div id="s1">
+                        <img src="https://cdn-icons-png.flaticon.com/128/609/609361.png" alt="">
+                    </div>
+                    <div id="s2">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it.
+                       We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+
+                <div id="assurance-container">
+                    <div id="a1">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1875/1875684.png" alt="">
+                    </div>
+                    <div id="a2">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or
+                            faults and we will check and test the pitch of your instrument.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="video-section">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qmyzFe_S4WY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="cardview-section">
+                <div class="cardview-div">
+                    <div id="cardview-title">TENOR TROMBONE</div>
+                    <div>
+                        <h2>$600</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <button type="submit">SELECT</button>
+                    </div>
+                </div>
+
+                <div class="cardview-div">
+                    <div id="cardview-title">BASS TROMBONE</div>
+                    <div>
+                        <h2>$900</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <button type="submit">SELECT</button>
+                    </div>
+                </div>
+
+                <div class="cardview-div">
+                    <div id="cardview-title">VALVE TROMBONE</div>
+                    <div>
+                        <h2>$1200</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div>
+                        <button type="submit">SELECT</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div>
+                    <ul>
+                        <li>Privacy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Contact us</li>
+                    </ul>
+                   
+                </div>
+                <div>
+                    <span>Copyright 2016, Original Trombones</span>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>
